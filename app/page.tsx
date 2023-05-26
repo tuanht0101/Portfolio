@@ -1,3 +1,4 @@
+import About from '@/components/About/About';
 import Header from '@/components/Header/Header';
 import HomeProfile from '@/components/HomeProfile/HomeProfile';
 import Image from 'next/image';
@@ -7,6 +8,7 @@ export default function Home() {
         <main>
             <Header title="MinhTuan.dev" />
             <HomeProfile />
+            <About />
         </main>
     );
 }

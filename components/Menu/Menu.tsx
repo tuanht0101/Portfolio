@@ -16,13 +16,10 @@ export default function Menu({ menuList, isOpen }: Props): JSX.Element {
         `}
         >
             {menuList.map((item, index) => (
-                <li
-                    className="hover:text-blue-400 mx-4 my-7 md:my-0 md:ml-8"
-                    key={index}
-                >
+                <li className=" mx-4 my-7 md:my-0 md:ml-8" key={index}>
                     <a
                         href={`#${item}`}
-                        className="font-sans font-bold text-lg"
+                        className="font-sans font-bold text-lg hover:text-blue-400"
                     >
                         {item}
                     </a>

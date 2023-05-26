@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useCallback, useEffect, useState } from 'react';
-import Menu from '../Menu/Menu';
+import React, { createContext, useCallback, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import HeadlessTippy from '@tippyjs/react/headless';
+
+import Menu from '../Menu/Menu';
 
 type Props = {
     title: string;
@@ -31,7 +33,7 @@ export default function Header({ title }: Props): JSX.Element {
                 {title}
             </div>
             <span
-                className="text-3xl cursor-pointer md:hidden"
+                className="text-3xl cursor-pointer md:hidden hover:opacity-70"
                 onClick={() => showMenu(isMenuOpen)}
             >
                 {isMenuOpen ? (
@@ -40,7 +42,12 @@ export default function Header({ title }: Props): JSX.Element {
                     <FontAwesomeIcon icon={faBars} />
                 )}
             </span>
-            <Menu menuList={menu} isOpen={isMenuOpen} />
+            <HeadlessTippy
+                visible={isMenuOpen}
+                onClickOutside={() => setIsMenuOpen(false)}
+            >
+                <Menu menuList={menu} isOpen={isMenuOpen} />
+            </HeadlessTippy>
         </nav>
     );
 }

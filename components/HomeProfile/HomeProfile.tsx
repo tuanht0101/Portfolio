@@ -45,7 +45,10 @@ export default function HomeProfile({}: Props) {
     ]);
 
     return (
-        <div className="flex flex-col bg-gray-200 items-center pt-36 pb-24 px-24 md:px-24">
+        <section
+            id="Home"
+            className="flex flex-col bg-gray-200 items-center pt-36 pb-24 px-24 md:px-24"
+        >
             <div className="flex flex-col justify-center md:flex-row">
                 <div className="flex flex-col flex-wrap w-full md:max-w-[500px] ">
                     <p className="font-sans font-black text-4.5xl md:text-5.5xl lg:text-6xl leading-tight ">
@@ -84,7 +87,7 @@ export default function HomeProfile({}: Props) {
                     </span>
                 </div>
                 <img
-                    className="h-80 md:h-[500px] ml-0 md:ml-16 mt-4"
+                    className="h-auto md:h-[500px] max-w-full ml-0 md:ml-16 mt-4"
                     src="images/profileImage.jpg"
                 ></img>
             </div>
@@ -105,6 +108,6 @@ export default function HomeProfile({}: Props) {
                 </p>
                 <SkillsList skills={skills} />
             </div>
-        </div>
+        </section>
     );
 }
