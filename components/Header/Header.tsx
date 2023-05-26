@@ -15,9 +15,12 @@ export default function Header({ title }: Props): JSX.Element {
 
     useEffect(() => {}, []);
 
-    const showMenu = useCallback((prev: boolean) => {
-        setIsMenuOpen(!prev);
-    }, []);
+    const showMenu = useCallback(
+        (prev: boolean) => {
+            setIsMenuOpen(!prev);
+        },
+        [isMenuOpen]
+    );
 
     return (
         <nav
@@ -32,7 +35,6 @@ export default function Header({ title }: Props): JSX.Element {
                 onClick={() => showMenu(isMenuOpen)}
             >
                 {isMenuOpen ? (
-                    // <FontAwesomeIcon icon={faX} />
                     <img src={'images/Close.svg'} className="w-9 h-9"></img>
                 ) : (
                     <FontAwesomeIcon icon={faBars} />

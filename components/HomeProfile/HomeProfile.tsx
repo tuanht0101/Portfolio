@@ -47,7 +47,7 @@ export default function HomeProfile({}: Props) {
     return (
         <div className="flex flex-col bg-gray-200 items-center py-24 px-24">
             <div className="flex flex-col justify-center md:flex-row">
-                <div className="flex flex-col flex-wrap sm:justify-center w-full md:w-1/2 lg:w-2/3 xl:w-3/4">
+                <div className="flex flex-col flex-wrap  w-full md:w-1/2 lg:w-2/3 xl:w-3/4">
                     <p className="font-sans font-black text-4.5xl md:text-5.5xl lg:text-6xl leading-tight">
                         Front-End React Developer
                     </p>

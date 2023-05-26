@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 type Props = {
     menuList: string[];
@@ -10,9 +10,9 @@ export default function Menu({ menuList, isOpen }: Props): JSX.Element {
         <ul
             className={`md:flex md:items-center md:pb-0 pb-12 z-[-1] md:z-auto md:static absolute bg-white 
         w-full md:w-auto left-0 md:pl-0 pl-9
-        top-[-400px] transition-all ease-in duration-500 ${
-            isOpen ? 'top-20 opacity-100' : 'top-[-490px]'
-        } md:opacity-100 opacity-0
+         transition-all ease-in duration-500 ${
+             isOpen ? 'top-20 opacity-100' : 'top-[-490px]'
+         } md:opacity-100 opacity-0
         `}
         >
             {menuList.map((item, index) => (
