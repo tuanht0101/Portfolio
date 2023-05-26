@@ -45,23 +45,60 @@ export default function HomeProfile({}: Props) {
     ]);
 
     return (
-        <div className="flex flex-col  bg-gray-200 items-center py-24 sm:px-24">
-            <div className="flex flex-col justify-center md:flex-row ">
-                <div className="max-w-40rem relative whitespace-wrap">
-                    <p className="text-5xl font-sans font-black">
+        <div className="flex flex-col bg-gray-200 items-center py-24 px-24">
+            <div className="flex flex-col justify-center md:flex-row">
+                <div className="flex flex-col flex-wrap sm:justify-center w-full md:w-1/2 lg:w-2/3 xl:w-3/4">
+                    <p className="font-sans font-black text-4.5xl md:text-5.5xl lg:text-6xl leading-tight">
                         Front-End React Developer
                     </p>
-                    <p className="my-6">
+                    <p className="my-6 font-medium text-base md:text-lg lg:text-xl text-gray-700">
                         Hi, I'm Tran Hoang Minh Tuan. A passionate Front-end
-                        React Developer currently in Hanoi, Vietnam.
+                        React Developer currently in Hanoi, Vietnam. 📍
                     </p>
-
-                    <div className="flex  pt-16">
-                        <p className="">Tech Stack</p>
-                        <SkillsList skills={skills} />
-                    </div>
+                    <span className="flex  space-x-2 py-4">
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://www.linkedin.com/in/tuan-tran-hoang-minh-16a545240/"
+                        >
+                            <img
+                                src="images/linkedin.svg"
+                                className="w-8 h-8 cursor-pointer hover:opacity-60"
+                            ></img>
+                        </a>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="https://github.com/tuanht0101"
+                        >
+                            <img
+                                src="images/github.svg"
+                                className="w-8 h-8 cursor-pointer hover:opacity-60"
+                            ></img>
+                        </a>
+                    </span>
                 </div>
-                <img className="h-2500px" src="images/profileImage.jpg"></img>
+                <img
+                    className="h-80 md:h-[500px] ml-0 md:ml-16 mt-4"
+                    src="images/profileImage.jpg"
+                ></img>
+            </div>
+
+            <div className="flex justify-center items-center pt-16">
+                <p
+                    className="font-semibold"
+                    style={{
+                        color: '#2d2e32',
+                        fontFamily: 'Mulish, sans-serif',
+                        borderRight: '2px solid rgba(45,46,50,.5)',
+                        paddingRight: '2rem',
+                        marginRight: '7rem',
+                        fontSize: '1.2rem',
+                    }}
+                >
+                    Tech Stack
+                </p>
+                <SkillsList skills={skills} />
             </div>
         </div>
     );
