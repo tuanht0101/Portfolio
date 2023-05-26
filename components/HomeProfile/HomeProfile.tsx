@@ -45,17 +45,22 @@ export default function HomeProfile({}: Props) {
     ]);
 
     return (
-        <div className="flex flex-col bg-gray-200 items-center py-24 px-24">
+        <div className="flex flex-col bg-gray-200 items-center pt-36 pb-24 px-24 md:px-24">
             <div className="flex flex-col justify-center md:flex-row">
-                <div className="flex flex-col flex-wrap  w-full md:w-1/2 lg:w-2/3 xl:w-3/4">
-                    <p className="font-sans font-black text-4.5xl md:text-5.5xl lg:text-6xl leading-tight">
-                        Front-End React Developer
+                <div className="flex flex-col flex-wrap w-full md:max-w-[500px] ">
+                    <p className="font-sans font-black text-4.5xl md:text-5.5xl lg:text-6xl leading-tight ">
+                        <span className="text-center md:text-left">
+                            Front-End React Developer
+                        </span>
                     </p>
-                    <p className="my-6 font-medium text-base md:text-lg lg:text-xl text-gray-700">
-                        Hi, I'm Tran Hoang Minh Tuan. A passionate Front-end
-                        React Developer currently in Hanoi, Vietnam. 📍
+                    <p className="my-6 font-medium text-base md:text-lg lg:text-xl text-gray-700 ">
+                        <span className="text-center md:text-left">
+                            Hi, I'm Tran Hoang Minh Tuan. A passionate Front-end
+                            React Developer currently looking for a job in
+                            Hanoi, Vietnam. 📍
+                        </span>
                     </p>
-                    <span className="flex  space-x-2 py-4">
+                    <span className="flex justify-center md:justify-start space-x-2 py-4">
                         <a
                             rel="noreferrer"
                             target="_blank"
