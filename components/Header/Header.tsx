@@ -17,19 +17,26 @@ export default function Header({ title }: Props): JSX.Element {
 
     useEffect(() => {}, []);
 
-    const showMenu = useCallback(
-        (prev: boolean) => {
-            setIsMenuOpen(!prev);
-        },
-        [isMenuOpen]
-    );
+    const showMenu = (prev: boolean) => {
+        setIsMenuOpen(!prev);
+    };
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    }
 
     return (
         <nav
             className="flex justify-between items-center fixed w-full top-0 px-12 py-6 bg-white z-[999]"
             style={{ boxShadow: '0 0 10px rgba(0, 0, 0, 0.09)' }}
         >
-            <div className="font-[Poppins] font-black text-xl cursor-pointer">
+            <div
+                className="font-[Poppins] font-black text-xl cursor-pointer"
+                onClick={scrollToTop}
+            >
                 {title}
             </div>
             <span

@@ -23,16 +23,14 @@ export default function About({}: Props) {
                 >
                     A dedicated Front-end Developer based in Hanoi, Vietnam 📍
                 </h3>
-                <p>
+                <p className="text-[#767676] font-mulish font-sans font-[500] leading-normal">
                     As a Fresher Front-End Developer, I possess an impressive
                     arsenal of skills in HTML, CSS, JavaScript, React, Tailwind,
                     and SCSS. I excel in designing and maintaining responsive
                     websites that offer a smooth user experience. My expertise
                     lies in crafting dynamic, engaging interfaces through
                     writing clean and optimized code and utilizing cutting-edge
-                    development tools and techniques. I am also a team player
-                    who thrives in collaborating with cross-functional teams to
-                    produce outstanding web applications.
+                    development tools and techniques.
                 </p>
             </div>
         </section>
