@@ -87,7 +87,7 @@ export default function HomeProfile({}: Props) {
                     </span>
                 </div>
                 <img
-                    className="h-auto md:h-[500px] max-w-full ml-0 md:ml-16 mt-4"
+                    className="h-auto md:h-[500px] max-w-full ml-0 md:ml-16 mt-4 rounded-lg"
                     src="images/profileImage.jpg"
                 ></img>
             </div>

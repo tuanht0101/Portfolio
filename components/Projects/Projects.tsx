@@ -13,11 +13,18 @@ type Props = {
 
 export default function Projects({ projectsList }: Props) {
     return (
-        <section id="Projects" className="bg-gray-200 py-8 px-4">
-            <h2 className="text-2xl text-center font-bold uppercase mb-6">
+        <section id="Projects" className="bg-gray-200 py-20 md:py-36 px-4">
+            <h2 className="text-2xl text-center font-bold uppercase mb-6 text-[#147efb]">
                 Portfolio
             </h2>
-            <h3 className="text-lg text-center mb-6">
+            <h3
+                className="text-lg text-center mb-20 text-[#2d2e32]"
+                style={{
+                    fontSize: '2.5rem',
+                    fontFamily: 'Poppins,sans-serif',
+                    lineHeight: '1.25',
+                }}
+            >
                 Each project is a unique piece of development 🧩
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

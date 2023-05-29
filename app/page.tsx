@@ -1,25 +1,40 @@
 import About from '@/components/About/About';
+import Contact from '@/components/Contact/Contact';
 import Header from '@/components/Header/Header';
 import HomeProfile from '@/components/HomeProfile/HomeProfile';
 import Projects from '@/components/Projects/Projects';
+import {
+    faEnvelope,
+    faMapLocation,
+    faPhone,
+} from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
     const projectData = [
         {
-            name: 'Project 1',
-            description: 'Description of Project 1',
-            technologies: ['Technology 1', 'Technology 2'],
-            gitCode: 'https://github.com/project1',
-            image: 'images/about-img.webp',
+            name: 'Project: Daily Blog',
+            description:
+                'This is a web blog that i created to use it for my Project 2 from my school.',
+            technologies: ['ReactJS', 'NodeJS', 'MongoDB'],
+            gitCode: 'https://github.com/tuanht0101/react-blog',
+            image: 'images/react_blog.png',
             liveDemo: 'https://project1-demo.com',
         },
         {
-            name: 'Project 2',
-            description: 'Description of Project 2',
-            technologies: ['Technology 3', 'Technology 4'],
-            gitCode: 'https://github.com/project2',
+            name: 'Project: Education Website',
+            description:
+                'This is an education website created by me and my friends from school where i took care of Front-End.',
+            technologies: ['ReactJS', 'ASP .NET', 'SQL', 'Docker'],
+            gitCode:
+                'https://github.com/tuanht0101/Coursenest-Education-Website',
             image: 'images/Screenshot 2023-05-28 174908.png',
         },
+    ];
+
+    const contactsList = [
+        { icon: faMapLocation, type: 'Location', info: 'Hanoi, Vietnam' },
+        { icon: faEnvelope, type: 'Mail', info: 'minhtuanphc201@gmail.com' },
+        { icon: faPhone, type: 'Phonenumber', info: '+84911095607' },
     ];
 
     return (
@@ -28,6 +43,7 @@ export default function Home() {
             <HomeProfile />
             <About />
             <Projects projectsList={projectData} />
+            <Contact contactsList={contactsList} />
         </main>
     );
 }
