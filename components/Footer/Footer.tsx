@@ -4,10 +4,13 @@ type Props = {};
 
 export default function Footer({}: Props) {
     return (
-        <div className="flex flex-wrap flex-col md:flex-row justify-around items-center bg-[#2d2e32] w-full py-[50px]">
+        <div className="flex flex-wrap flex-col md:flex-row justify-center md:justify-around items-center bg-[#2d2e32] w-full py-[50px]">
             <p
-                className="text-white font-bold"
-                style={{ fontFamily: 'Poppins,sans-serif', fontSize: '1.2rem' }}
+                className="text-white font-bold text-center sm:text-center"
+                style={{
+                    fontFamily: 'Poppins,sans-serif',
+                    fontSize: '1.2rem',
+                }}
             >
                 Copyright © 2023. All rights are reserved
             </p>

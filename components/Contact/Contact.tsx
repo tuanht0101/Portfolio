@@ -21,7 +21,7 @@ export default function Contact({ contactsList }: Props) {
                 Contact
             </p>
             <h3
-                className="text-[#2d2e32] font-bold"
+                className="text-[#2d2e32] font-bold text-center sm:text-center"
                 style={{ fontSize: '2.5rem', fontFamily: 'Poppins,sans-serif' }}
             >
                 Don't be shy! Hit me up! 👇
