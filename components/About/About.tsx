@@ -21,7 +21,8 @@ export default function About({}: Props) {
                 leading-snug mt-2 mb-4
                 "
                 >
-                    A dedicated Front-end Developer based in Hanoi, Vietnam 📍
+                    A dedicated Front-end Developer studying at Hanoi University
+                    of Science and Technology 📍
                 </h3>
                 <p className="text-[#767676] font-mulish font-sans font-[500] leading-normal">
                     As a Fresher Front-End Developer, I possess an impressive

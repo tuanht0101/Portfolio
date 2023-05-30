@@ -46,7 +46,11 @@ export default function Projects({ projectsList }: Props) {
                             {item.technologies.map((technology, index) => (
                                 <li
                                     key={index}
-                                    className="bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm"
+                                    className="bg-white text-[#000] rounded-full px-3 py-1 text-sm font-semibold"
+                                    style={{
+                                        fontFamily: 'Mulish,sans-serif',
+                                        boxShadow: '0 0 10px rgba(0,0,0,.1)',
+                                    }}
                                 >
                                     {technology}
                                 </li>
@@ -55,7 +59,7 @@ export default function Projects({ projectsList }: Props) {
                         <div className="mt-4">
                             <a
                                 href={item.gitCode}
-                                className="text-blue-600 font-semibold mr-4"
+                                className="text-blue-600 font-semibold mr-4 hover:opacity-70"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -64,7 +68,7 @@ export default function Projects({ projectsList }: Props) {
                             {item.liveDemo && (
                                 <a
                                     href={item.liveDemo}
-                                    className="text-blue-600 font-semibold"
+                                    className="text-blue-600 font-semibold hover:opacity-70"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

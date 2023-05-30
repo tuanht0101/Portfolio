@@ -1,5 +1,6 @@
 import About from '@/components/About/About';
 import Contact from '@/components/Contact/Contact';
+import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import HomeProfile from '@/components/HomeProfile/HomeProfile';
 import Projects from '@/components/Projects/Projects';
@@ -14,7 +15,7 @@ export default function Home() {
         {
             name: 'Project: Daily Blog',
             description:
-                'This is a web blog that i created to use it for my Project 2 from my school.',
+                'This is a web blog that i created by myself to use it for my Project 2 from my school.',
             technologies: ['ReactJS', 'NodeJS', 'MongoDB'],
             gitCode: 'https://github.com/tuanht0101/react-blog',
             image: 'images/react_blog.png',
@@ -44,6 +45,7 @@ export default function Home() {
             <About />
             <Projects projectsList={projectData} />
             <Contact contactsList={contactsList} />
+            <Footer />
         </main>
     );
 }
