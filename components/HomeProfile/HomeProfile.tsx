@@ -63,6 +63,9 @@ export default function HomeProfile({}: Props) {
                             Hanoi, Vietnam. 📍
                         </span>
                     </p>
+                    <span className="mb-6 md:text-left font-medium text-base md:text-lg lg:text-xl text-gray-700 ">
+                        Languages: Vietnamese, English, French
+                    </span>
                     <span className="flex justify-center md:justify-start space-x-2 py-4">
                         <a
                             rel="noreferrer"
