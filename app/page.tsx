@@ -37,6 +37,7 @@ export default function Home() {
             technologies: ['ReactJS', 'NestJS', 'PostgreSQL', 'Docker'],
             gitCode: 'https://github.com/tuanht0101/my-restaurant-be',
             image: 'images/capnhathoadon.png',
+            liveDemo: 'https://midtastestaff.vercel.app',
         },
     ];
 
