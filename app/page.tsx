@@ -22,13 +22,21 @@ export default function Home() {
             liveDemo: 'https://project1-demo.com',
         },
         {
-            name: 'Project: Education Website',
+            name: 'Group Project: Education Website',
             description:
                 'This is an education website created by me and my friends from school where i took care of Front-End.',
             technologies: ['ReactJS', 'ASP .NET', 'SQL', 'Docker'],
             gitCode:
                 'https://github.com/tuanht0101/Coursenest-Education-Website',
             image: 'images/Screenshot 2023-05-28 174908.png',
+        },
+        {
+            name: 'Graduation Project: Restaurant Management Website',
+            description:
+                'This is a restaurant management website created by myself.',
+            technologies: ['ReactJS', 'NestJS', 'PostgreSQL', 'Docker'],
+            gitCode: 'https://github.com/tuanht0101/my-restaurant-be',
+            image: 'images/capnhathoadon.png',
         },
     ];
 
