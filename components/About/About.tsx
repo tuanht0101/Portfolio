@@ -21,13 +21,13 @@ export default function About({}: Props) {
                 leading-snug mt-2 mb-4
                 "
                 >
-                    A dedicated Front-end Developer studying at Hanoi University
+                    A dedicated Website Developer studying at Hanoi University
                     of Science and Technology 📍
                 </h3>
                 <p className="text-[#767676] font-mulish font-sans font-[500] leading-normal">
-                    As a Fresher Front-End Developer, I possess an impressive
-                    arsenal of skills in HTML, CSS, JavaScript, React, Tailwind,
-                    and SCSS. I excel in designing and maintaining responsive
+                    As a Website Developer, I possess an impressive arsenal of
+                    skills in HTML, CSS, JavaScript, React, Tailwind, SCSS,
+                    NestJS. I excel in designing and maintaining responsive
                     websites that offer a smooth user experience. My expertise
                     lies in crafting dynamic, engaging interfaces through
                     writing clean and optimized code and utilizing cutting-edge
