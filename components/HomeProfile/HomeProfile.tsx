@@ -63,9 +63,9 @@ export default function HomeProfile({}: Props) {
                     </p>
                     <p className="my-6 font-medium text-base md:text-lg lg:text-xl text-gray-700 ">
                         <span className="text-center md:text-left">
-                            Hi, I'm Tran Hoang Minh Tuan. A passionate Front-end
-                            React Developer currently looking for a job in
-                            Hanoi, Vietnam. 📍
+                            Hi, I'm Tran Hoang Minh Tuan. A passionate Website
+                            Developer currently looking for a job in Hanoi,
+                            Vietnam. 📍
                         </span>
                     </p>
                     <span className="mb-6 md:text-left font-medium text-base md:text-lg lg:text-xl text-gray-700 ">
