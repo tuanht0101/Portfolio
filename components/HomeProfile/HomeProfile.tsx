@@ -42,6 +42,11 @@ export default function HomeProfile({}: Props) {
             image: 'images/next.svg',
             href: 'https://nextjs.org/',
         },
+        {
+            name: 'NestJS',
+            image: 'images/nestjs.svg',
+            href: 'https://nestjs.com/',
+        },
     ]);
 
     return (
