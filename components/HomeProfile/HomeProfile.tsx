@@ -58,7 +58,7 @@ export default function HomeProfile({}: Props) {
                 <div className="flex flex-col flex-wrap w-full md:max-w-[500px] ">
                     <p className="font-sans font-black text-4.5xl md:text-5.5xl lg:text-6xl leading-tight ">
                         <span className="text-center md:text-left">
-                            Front-End React Developer
+                            Website Developer
                         </span>
                     </p>
                     <p className="my-6 font-medium text-base md:text-lg lg:text-xl text-gray-700 ">
